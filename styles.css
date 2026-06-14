@@ -10,7 +10,7 @@
 
   /* ---- layout grid ---- */
   --container: 1440px;            /* max content width, shared by every section */
-  --gutter: clamp(24px, 5vw, 80px); /* side padding, shared by every section   */
+  --gutter: clamp(24px, 6vw, 80px); /* side padding ~80px on desktop, shared everywhere */
   --grid-cols: 12;
   --grid-gap: 24px;              /* gap between grid columns                    */
 
