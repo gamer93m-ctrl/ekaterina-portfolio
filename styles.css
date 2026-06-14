@@ -249,7 +249,9 @@ a { color: inherit; text-decoration: none; }
 .about {
   height: 100vh;
   min-height: 520px;
-  padding-block: var(--space-7);   /* breathing room inside the 100vh */
+  /* generous top/bottom padding inside the 100vh — the fitter
+     shrinks the font to whatever height is left */
+  padding-block: clamp(96px, 16vh, 220px);
   display: flex;
   align-items: center;
 }
