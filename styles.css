@@ -247,22 +247,26 @@ a { color: inherit; text-decoration: none; }
    measure but left-aligned to the shared left edge.
    =========================================================== */
 .about {
-  padding-block: 0 var(--section-y);
+  height: 100vh;
+  min-height: 520px;
+  padding-block: var(--space-7);   /* breathing room inside the 100vh */
+  display: flex;
+  align-items: center;
 }
+/* font-size is set by script.js to fill the available height */
+.about-inner { width: 100%; }
 .about p {
-  font-size: clamp(24px, 3.4vw, 46px);
   font-weight: 500;
   letter-spacing: -0.01em;
-  line-height: 1.3;
+  line-height: 1.25;
 }
-.about p + p { margin-top: var(--space-5); }
+.about p + p { margin-top: 0.55em; }   /* relative — scales with the font */
 .inline-pic {
   display: inline-block;
-  height: auto;
+  height: 2.1em;                       /* tied to the font size */
   width: auto;
-  max-height: 104px;
   vertical-align: middle;
-  margin: 0 10px;
+  margin: 0 0.28em;
   border-radius: 4px;
 }
 
@@ -331,6 +335,5 @@ a { color: inherit; text-decoration: none; }
   .phone { max-width: none; }
   .carousel-arrow { position: static; margin-top: var(--space-3); }
   .navlink, .nav-divider { display: none; }
-  .inline-pic { max-height: 64px; }
   .footer-headline { flex-direction: column; align-items: flex-start; gap: var(--space-4); }
 }
