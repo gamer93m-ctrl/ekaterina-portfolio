@@ -7,7 +7,7 @@
   <meta name="description" content="Venediktova Ekaterina — Product Designer. I create websites with a focus on logic, structure, and user experience." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -24,60 +24,60 @@
     <!-- Hero -->
     <section class="hero">
       <h1 class="hero-name">Ekaterina</h1>
-      <p class="hero-role">Product Designer</p>
+      <p class="hero-role">Product designer</p>
       <p class="hero-desc">
-        I create websites with a focus on logic, structure, and user experience
+        I create websites with a focus on logic, structure, and user experience<br />
         — so they are useful, intuitive, and actually work for you.
       </p>
       <div class="hero-actions">
-        <a href="#" class="chip">CV ↗</a>
-        <a href="https://t.me/lermooontova" target="_blank" rel="noopener" class="chip">Telegram ↗</a>
-        <a href="#" class="chip">HH.RU ↗</a>
+        <a href="#" class="chip">CV <span class="ar">↗</span></a>
+        <a href="https://t.me/lermooontova" target="_blank" rel="noopener" class="chip">Telegram <span class="ar">↗</span></a>
+        <a href="#" class="chip">HH.RU <span class="ar">↗</span></a>
       </div>
     </section>
 
-    <!-- Work -->
-    <section id="work" class="work">
-      <article class="project">
-        <div class="project-info">
-          <h2 class="project-title">ЗАГОЛОВОК</h2>
-          <p class="project-desc">
-            Описание кейса — контекс максимум в 3 строки ание кейса — контекс
-            максимум в 3 строки Описание кейса — контекс максимум в 3 строки
+    <!-- Cases -->
+    <section id="work" class="cases">
+      <article class="case">
+        <div class="case-info">
+          <h2 class="case-title">ЗАГОЛОВОК</h2>
+          <p class="case-desc">
+            Описание кейса - контекс максимум в 3 строки ание кейса - контекс
+            максимум в 3 строки Описание кейса - контекс максимум в 3 строки
           </p>
           <dl class="meta">
-            <div><dt>Сфера</dt><dd>App . NFT . e-commerce</dd></div>
-            <div><dt>Годы</dt><dd>Годы</dd></div>
-            <div><dt>Метрики</dt><dd>Мет</dd></div>
+            <div class="meta-row"><dt>Сфера</dt><dd>App . NFT . e-commerce</dd></div>
+            <div class="meta-row"><dt>Годы</dt><dd>Годы</dd></div>
+            <div class="meta-row"><dt>Метрики</dt><dd>Мет</dd></div>
           </dl>
           <a href="#contact" class="btn-detail">Текст кнопки подробнее <span class="arrow">›</span></a>
         </div>
-        <div class="project-shots">
-          <div class="phone"></div>
-          <div class="phone"></div>
-          <div class="phone"></div>
+        <div class="case-shots">
+          <img src="img/phone1.png" alt="App screen 1" />
+          <img src="img/phone2.png" alt="App screen 2" />
+          <img src="img/phone3.png" alt="App screen 3" />
         </div>
         <button class="carousel-arrow" aria-label="Next">›</button>
       </article>
 
-      <article class="project">
-        <div class="project-info">
-          <h2 class="project-title">ЗАГОЛОВОК</h2>
-          <p class="project-desc">
-            Описание кейса — контекс максимум в 3 строки ание кейса — контекс
-            максимум в 3 строки Описание кейса — контекс максимум в 3 строки
+      <article class="case">
+        <div class="case-info">
+          <h2 class="case-title">ЗАГОЛОВОК</h2>
+          <p class="case-desc">
+            Описание кейса - контекс максимум в 3 строки ание кейса - контекс
+            максимум в 3 строки Описание кейса - контекс максимум в 3 строки
           </p>
           <dl class="meta">
-            <div><dt>Сфера</dt><dd>App . NFT . e-commerce</dd></div>
-            <div><dt>Годы</dt><dd>Годы</dd></div>
-            <div><dt>Метрики</dt><dd>Мет</dd></div>
+            <div class="meta-row"><dt>Сфера</dt><dd>App . NFT . e-commerce</dd></div>
+            <div class="meta-row"><dt>Годы</dt><dd>Годы</dd></div>
+            <div class="meta-row"><dt>Метрики</dt><dd>Мет</dd></div>
           </dl>
           <a href="#contact" class="btn-detail">Текст кнопки подробнее <span class="arrow">›</span></a>
         </div>
-        <div class="project-shots">
-          <div class="phone"></div>
-          <div class="phone"></div>
-          <div class="phone"></div>
+        <div class="case-shots">
+          <div class="phone-empty"></div>
+          <div class="phone-empty"></div>
+          <div class="phone-empty"></div>
         </div>
         <button class="carousel-arrow" aria-label="Next">›</button>
       </article>
@@ -86,19 +86,19 @@
     <!-- About -->
     <section id="about" class="about">
       <p>
-        Art school led me <span class="inline-pic pic-art" aria-hidden="true"></span>
+        Art school led me <img class="inline-pic" src="img/about_art.png" alt="" />
         into graphic design, and graphic design led me into web.
       </p>
       <p>
-        I was born and raised on Sakhalin <span class="inline-pic pic-island" aria-hidden="true"></span>
+        I was born and raised on Sakhalin <img class="inline-pic" src="img/about_island.png" alt="" />
         an island in the Russian Far East. It shaped my visual thinking,
-        <span class="inline-pic pic-asia" aria-hidden="true"></span> my interest
-        in Asian culture, and a more structured and observant approach to visuals.
+        <img class="inline-pic" src="img/about_asia.png" alt="" /> my interest in
+        Asian culture, and a more structured and observant approach to visuals.
       </p>
       <p>
         For me, a website is not “just something beautiful on the internet”,
-        <span class="inline-pic pic-web" aria-hidden="true"></span> but a
-        functional tool that should be logical, easy to use, and clear for people
+        <img class="inline-pic" src="img/about_web.png" alt="" /> but a functional
+        tool that should be logical, easy to use, and clear for people
       </p>
     </section>
   </main>
@@ -109,26 +109,28 @@
       <span>SAINT-PETERSBURG, RUSSIA</span>
       <span>2026</span>
     </div>
-    <div class="footer-headline">
-      <h2>GET IN TOUCH</h2>
-      <a href="mailto:lermontova17katy@gmail.com" class="footer-arrow" aria-label="Get in touch">↗</a>
-    </div>
-    <div class="footer-links">
-      <div>
-        <span class="footer-label">EMAIL</span>
-        <a href="mailto:lermontova17katy@gmail.com">lermontova17katy@gmail.com</a>
+    <h2 class="footer-headline">GET IN TOUCH</h2>
+    <div class="footer-bottom">
+      <div class="footer-links">
+        <div>
+          <span class="footer-label">EMAIL</span>
+          <a href="mailto:lermontova17katy@gmail.com">lermontova17katy@gmail.com</a>
+        </div>
+        <div>
+          <span class="footer-label">TELEGRAM</span>
+          <a href="https://t.me/lermooontova" target="_blank" rel="noopener">@lermooontova</a>
+        </div>
+        <div>
+          <span class="footer-label">INSTAGRAM</span>
+          <a href="https://instagram.com/lermooontova" target="_blank" rel="noopener">@lermooontova</a>
+        </div>
       </div>
-      <div>
-        <span class="footer-label">TELEGRAM</span>
-        <a href="https://t.me/lermooontova" target="_blank" rel="noopener">@lermooontova</a>
-      </div>
-      <div>
-        <span class="footer-label">INSTAGRAM</span>
-        <a href="https://instagram.com/lermooontova" target="_blank" rel="noopener">@lermooontova</a>
-      </div>
+      <a href="mailto:lermontova17katy@gmail.com" class="footer-arrow" aria-label="Get in touch">
+        <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 100 L100 20 M40 20 H100 V80" stroke="white" stroke-width="4" fill="none"/>
+        </svg>
+      </a>
     </div>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>

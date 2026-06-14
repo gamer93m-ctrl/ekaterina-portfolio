@@ -1,30 +1,28 @@
-# Ekaterina — Portfolio
+# Venediktova Ekaterina — Portfolio
 
-A single-page portfolio for a product designer. Built as a lightweight static
-site (HTML + CSS + a touch of JS), based on a Figma design.
+A single-page portfolio for a product designer, built pixel-by-pixel from the
+Figma frames as a lightweight static site (HTML + CSS).
 
-## Sections
-- **Hero** — name, role, intro, quick links
-- **Work** — alternating project rows with phone mockups
-- **About** — short narrative
-- **Get in touch** — contact links
+## Structure
+- **Hero** — name (160px), role (48px), 2-line description, CV / Telegram / HH.RU chips
+- **Cases** — info column (436px) + three phone screens, repeated
+- **About** — narrative with real inline images from the frames
+- **Footer** — `GET IN TOUCH` (200px) on black, contacts + arrow
+
+All real image assets (phone screens, about images) are exported from the
+Figma file and live in `img/`.
+
+## Fonts
+The design uses **Neue Montreal** (commercial — not redistributable here).
+Drop `NeueMontreal-Regular.woff2` and `NeueMontreal-Medium.woff2` into `fonts/`
+and the `@font-face` rules pick them up automatically. Until then the site
+falls back to a neutral grotesk (Inter) so the layout stays intact.
 
 ## Run locally
-Any static server works, e.g.:
-
 ```bash
 npx serve .
 ```
 
-Then open the printed URL.
-
-## Deploy (GitHub Pages)
-This repo is set up to publish from the `main` branch root. Once Pages is
-enabled, the site is live at the repository's Pages URL.
-
-## Customize
-- Edit copy and projects in `index.html`.
-- Swap the placeholder `.phone` blocks for real screenshots (drop images in and
-  set them as `background-image`, or replace with `<img>`).
-- Update contact links in the footer.
-- Colors and spacing live as CSS variables at the top of `styles.css`.
+## Deploy
+Published via GitHub Pages from the `main` branch root:
+https://gamer93m-ctrl.github.io/ekaterina-portfolio/
