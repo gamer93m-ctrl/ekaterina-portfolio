@@ -23,38 +23,58 @@ body {
 
 a { color: inherit; text-decoration: none; }
 
-/* ---------- Top bar ---------- */
+/* ---------- Top bar (floating glass pill) ---------- */
 .topbar {
-  position: sticky;
-  top: 0;
-  z-index: 50;
+  position: fixed;
+  top: 18px;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+}
+.navpill {
+  pointer-events: auto;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 26px clamp(20px, 4vw, 56px);
-  background: rgba(244, 244, 242, 0.82);
-  backdrop-filter: saturate(180%) blur(10px);
+  gap: 8px;
+  padding: 7px 7px 7px 20px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: saturate(180%) blur(18px);
+  -webkit-backdrop-filter: saturate(180%) blur(18px);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
 }
 .logo {
   font-weight: 700;
-  letter-spacing: 0.04em;
-  font-size: 15px;
+  letter-spacing: 0.06em;
+  font-size: 13px;
 }
-.topnav {
-  display: flex;
-  align-items: center;
-  gap: clamp(20px, 4vw, 60px);
-  font-size: 16px;
+.nav-divider {
+  width: 1px;
+  height: 16px;
+  background: rgba(0, 0, 0, 0.12);
+  margin: 0 6px;
 }
-.topnav > a:not(.pill):hover { opacity: .6; }
+.navlink {
+  font-size: 14px;
+  color: #444;
+  padding: 8px 6px;
+  transition: color .2s;
+}
+.navlink:hover { color: #000; }
 .pill {
   background: var(--dark);
   color: #fff !important;
-  padding: 12px 24px;
+  padding: 9px 18px;
   border-radius: 999px;
   font-weight: 500;
+  font-size: 14px;
+  transition: transform .2s, opacity .2s;
 }
-.pill:hover { opacity: .85; }
+.pill:hover { transform: translateY(-1px); opacity: .9; }
 
 /* ---------- Hero ---------- */
 .hero {
@@ -64,7 +84,7 @@ a { color: inherit; text-decoration: none; }
   text-align: center;
 }
 .hero-name {
-  font-size: clamp(72px, 16vw, 220px);
+  font-size: clamp(56px, 12vw, 120px);
   font-weight: 600;
   letter-spacing: -0.04em;
   line-height: 0.9;
@@ -292,6 +312,6 @@ a { color: inherit; text-decoration: none; }
   .project-desc { max-width: none; }
   .phone { max-width: none; }
   .carousel-arrow { position: static; margin-top: 20px; }
-  .topnav > a:not(.pill) { display: none; }
+  .navlink, .nav-divider { display: none; }
   .footer-headline { flex-direction: column; align-items: flex-start; gap: 30px; }
 }
